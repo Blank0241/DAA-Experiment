@@ -44,6 +44,7 @@ dist, prev = dijkstra(graph,source)
 print(f"Shortest paths from vertex {source}:")
 print(f"{'vertex':>8} {'Distance':>10} {'Path':>30}")
 print('-' * 55)
+
 for v in range(len(graph)):
     path = reconstruct_path(prev,source,v)
     path_str = ' -> '.join(map(str,path)) if path else 'No Path'
