@@ -19,6 +19,7 @@ def interpolation_search(arr, target):
         else:
             high = pos - 1
     return -1, comparisons
+
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
     comparisons = 0
